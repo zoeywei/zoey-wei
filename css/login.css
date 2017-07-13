@@ -1,0 +1,86 @@
+input {
+	width: 100%;
+	border: 0;
+}
+h2{
+		color: #FFFFFF;
+	margin: 0px;
+}
+.top {
+	background-color: #45b7fe;
+	width: 100%;
+}
+
+.pic {
+	text-align: center;
+	height: 0.4rem;
+}
+
+.pic img {
+	float: left;
+}
+
+.pic-p {
+	float: right;
+	text-align: right;
+	height: 0.4rem;
+}
+
+.reco-in {
+	padding: 0.27rem 0 0;
+	height: 0.9rem;
+}
+
+.reco-in-ri {
+	padding: 0.31rem 0 0;
+}
+
+.reco-pic {
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.pic-p p {
+	color: #FFFFFF;
+	font-size: 0.28rem;
+}
+
+h1 {
+	margin: 0.03rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.clear {
+  clear: both;
+}
+.gray {
+	height: 0.2rem;
+	background-color: #f1f1f1;
+	width: 100%;
+}
+.login{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.login .name{
+	padding: 0.2rem;
+	height: 0.85rem;
+	font-size: 0.3rem;
+	line-height:0.45rem ;
+	border-bottom: 1px solid #F1F1F1;
+}
+.login .forPsw,h3{
+	height: 0.85rem;
+	float: right;
+	border: 0;
+	color: #45b7fe;
+}
+.login .regbu{
+	height: 0.85rem;
+	padding: 0.2rem;
+	background-color: #45b7fe;
+	border: 1px solid #45b7fe;
+	border-radius: 10px;
+	text-align: center;
+
+}

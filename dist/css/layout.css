@@ -1,0 +1,198 @@
+html,
+body {
+	height: 100%
+}
+
+html {
+	font-size: 100px
+}
+
+body {
+	font-size: .28rem;
+	background-color: #eee;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei"
+}
+
+img {
+	max-height: 720px;
+	height: expression(this.height > 720 ? 720: true);
+}
+.container-box {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%
+}
+
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+	padding: 0!important
+}
+
+.defaultimg {
+	background: url(../images/default.png) center no-repeat;
+	background-size: auto 100%
+}
+
+a {
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:link{
+	text-decoration: none
+}
+a:visited{
+	text-decoration: none
+}
+a:hover {
+	text-decoration: none
+}
+
+ul {
+	list-style-type: none;
+	padding: 0
+}
+
+footer {
+	height: 1rem
+}
+
+footer .foot {
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	height: 1rem;
+	padding: 0 .2rem;
+	border-top: 1px solid #e7e7e7;
+	background-color: #fff
+}
+
+footer .foot.bg-white {
+	background-color: #f1f1f1
+}
+
+footer .foot.bg-red {
+	background-color: #da251c
+}
+
+footer .foot .footnav-box a {
+	color: #333
+}
+
+footer .foot .footnav {
+	width: 33%;
+	float: left;
+	text-align: center;
+	color: #333;
+	padding-top: .05rem
+}
+
+footer .foot .footnav .icon1 {
+	display: inline-block;
+	font-size: 0;
+	width: .5rem;
+	height: .5rem;
+	background: url(../../img/top/home.png) no-repeat;
+	background-size: 0.44rem 0.4rem; 
+}
+footer .foot .footnav .icon1-2{
+	display: inline-block;
+	font-size: 0;
+	width: .5rem;
+	height: .5rem;
+	background: url(../../img/top/home-1.png) no-repeat;
+	background-size: 0.44rem 0.4rem; 
+}
+footer .foot .footnav .icon2 {
+	display: inline-block;
+	font-size: 0;
+	width: .5rem;
+	height: .5rem;
+	background: url(../../img/top/health.png) no-repeat;
+	background-size: 0.44rem 0.4rem;
+}
+.icon2-2{
+	display: inline-block;
+	font-size: 0;
+	width: .5rem;
+	height: .5rem;
+	background: url(../../img/top/health-1.png) no-repeat;
+	background-size: 0.44rem 0.4rem; 
+}
+footer .foot .footnav .icon3 {
+	display: inline-block;
+	font-size: 0;
+	width: .5rem;
+	height: .5rem;
+	background: url(../../img/top/my.png) no-repeat;
+	background-size: 0.44rem 0.4rem;
+}
+.icon3-2{
+	display: inline-block;
+	font-size: 0;
+	width: .5rem;
+	height: .5rem;
+	background: url(../../img/top/my-1.png) no-repeat;
+	background-size: 0.44rem 0.4rem; 
+}
+footer .foot .footnav .icon.style1 {
+	background-position: 0 0
+}
+
+footer .foot .footnav .icon.style2 {
+	background-position: -.48rem 0
+}
+
+footer .foot .footnav .icon.style3 {
+	background-position: -.96rem 0
+}
+
+footer .foot .footnav .icon.style4 {
+	background-position: -1.44rem 0
+}
+
+footer .foot .footnav .icon.style5 {
+	background-position: -1.92rem 0
+}
+
+
+
+footer .foot .footnav.active .icon.style1 {
+	background-position: 0 -.48rem
+}
+
+footer .foot .footnav.active .icon.style2 {
+	background-position: -.48rem -.48rem
+}
+
+footer .foot .footnav.active .icon.style3 {
+	background-position: -.96rem -.48rem
+}
+
+footer .foot .footnav.active .icon.style4 {
+	background-position: -1.44rem -.48rem
+}
+
+footer .foot .footnav.active .icon.style5 {
+	background-position: -1.92rem -.48rem
+}
+
+footer .foot .footnav p {
+	margin: 0;
+	font-size: .3rem;
+	margin-top: -.1rem
+}
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

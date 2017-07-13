@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>创建牙科视频</title>
+		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/addMove.css" />
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="../dist/js/layout.js"></script>
+		<!--图片上传js-->
+		<script type="text/javascript" src="../js/imgid.js"></script>
+		<!--页面传值 js-->
+		<script type="text/javascript" src="../json/addMove.js"></script>
+
+	</head>
+
+	<body class="notopscroll">
+		<!--顶部导航-->
+		<div id="father">
+			<!--主要是为了背景变灰-->
+			<div class="top">
+				<div class="recommend clearfix top1">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-4">
+						<div class="reco-in">
+							<div class="reco-pic pic">
+								<h1>创建视频</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--顶部导航--完-->
+
+			<div class="gray"></div>
+
+			<!--详情--开始-->
+			<div class="midd">
+				<div class="midd1">
+					<div class="midd-bo">
+						<div class="col-xs-4">
+							<p>牙科标题</p>
+						</div>
+						<div class="col-xs-8" id="title">
+							<input type="text" class="midd-inp" placeholder="请输入视频标题"></input>
+						</div>
+					</div>
+				</div>
+
+				<div class="midd1">
+					<div class="midd-bo">
+						<div class="col-xs-4">
+							<p>视频地址</p>
+						</div>
+						<div class="col-xs-8" id="url">
+							<input type="text" class="midd-inp" placeholder="请输入第三方视频地址"></input>
+						</div>
+					</div>
+				</div>
+
+				<div class="midd1">
+					<div class="midd-bo1" id="head1">
+						<div class="col-xs-4">
+							<p>本地视频</p>
+						</div>
+						<a href="#">
+							<div class="col-xs-7">
+								<p>点击上传本地视频</p>
+							</div>
+						</a>
+						<div class="col-xs-1" style="margin-top: 0.1rem;">
+							<img src="../img/images/you.png" />
+						</div>
+					</div>
+
+				</div>
+
+				<div class="gray"></div>
+
+				<div class="midd1 midd2">
+					<div class="col-xs-4">
+						<p>设置封面</p>
+					</div>
+					<div class="col-xs-8">
+						<div id="preview1"><img id="head2" src="../img/images/cover.png" /></div>
+						<div class="a-butt">
+							<p class="p">修改封面</p>
+						</div>
+						<input class="memberphoto-upload" type="file" onchange="previewImage1(this)" />
+					</div>
+				</div>
+
+				<div class="gray"></div>
+
+				<div class="midd">
+					<div class="midd1">
+						<div class="col-xs-4">
+							<p>视频简介</p>
+						</div>
+					</div>
+					<div class="midd4" style="padding-top: 0px;">
+						<div class="col-xs-12">
+							<div class="midd1-1">
+								<textarea class="midd-tex" id="about" placeholder="请填写牙科视频简介"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom" id="addMove">
+					<div class="butt">
+						<a>
+							<div class="butt-bor">
+								<p>确认发布</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--相册--结束-->
+			</div>
+		</div>
+		<!--详情--结束-->
+
+		<!--提示信息-->
+		<script src="../js/point.js"></script>
+
+		<!--弹出窗-->
+		<footer id="head">
+			<div class="foot">
+				<div class="col-xs-12">
+					<p>拍摄</p>
+				</div>
+				<div class="col-xs-12">
+					<p>从手机视频选择</p>
+				</div>
+				<div class="col-xs-12" style="height: 0.22rem">
+					<div class="gray"></div>
+				</div>
+				<a href="addMove.html">
+					<div class="col-xs-12">
+						<p>取消</p>
+					</div>
+				</a>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

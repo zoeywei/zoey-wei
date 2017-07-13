@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>创建病例</title>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/Addcase.css" />
+		<link rel="stylesheet" href="../css/a.css" />
+		<link rel="stylesheet" href="../time/css/common.css" />
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="../dist/js/layout.js"></script>
+		<!--传值的json文件-->
+		<script type="text/javascript" src="../json/addCase.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#addcase").click(function(){
+				var a=$("#symptom").val();
+				
+				alert(a);
+			})
+		})
+		
+		</script>
+	</head>
+
+	<body class="notopscroll">
+		<!--顶部导航-->
+		<div class="top">
+			<div class="recommend clearfix top1">
+				<div class="col-xs-2">
+				</div>
+				<div class="col-xs-8">
+					<div class="reco-in">
+						<div class="reco-pic pic">
+							<h1>创建病例</h1>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--顶部导航--完-->
+
+		<!--五十度灰-->
+		<div class="gray"></div>
+		<!--五十度灰--结束-->
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>姓名</p>
+				</div>
+				<div class="col-xs-8">
+					<input id="name" type="text" placeholder="请输入真实姓名"></input>
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>性别</p>
+				</div>
+				<div class="col-xs-7">
+					<select id="sex">
+					<option>女</option>
+					<option>男</option>
+				</select>
+				</div>
+				<div class="col-xs-1">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>年龄</p>
+				</div>
+				<div class="col-xs-7">
+					<input onkeyup='this.value=this.value.replace(/\D/gi,"")' type="text" placeholder="请输入年龄" id="age"></input>
+				</div>
+				<div class="col-xs-1">
+					<h2>岁</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>名族</p>
+				</div>
+				<div class="col-xs-7">
+					<select id="nation_id">
+					<option>汉族</option>
+				</select>
+				</div>
+				<div class="col-xs-1">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>婚姻</p>
+				</div>
+				<div class="col-xs-7">
+					<select id="marriage">
+					<option>未婚</option>
+					<option>已婚</option>
+				</select>
+				</div>
+				<div class="col-xs-1">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>籍贯</p>
+				</div>
+				<div class="col-xs-7">
+					<input id="place_id" placeholder="请输入籍贯"></input>
+				</div>
+				<div class="col-xs-1">
+
+				</div>
+			</div>
+		</div>
+
+		<!--五十度灰-->
+		<div class="gray"></div>
+		<!--五十度灰--结束-->
+
+		<form name="myform" action="#" method="post">
+			<div class="midd">
+				<div class="midd1">
+					<div class="col-xs-4">
+						<p>电话</p>
+					</div>
+					<div class="col-xs-8">
+						<input id="iphone" onkeyup='this.value=this.value.replace(/\D/gi,"")' type="number" class="id-1-2" placeholder="请输入联系电话"></input>
+					</div>
+				</div>
+			</div>
+
+			<div class="midd">
+				<div class="midd1">
+					<div class="col-xs-4">
+						<p>现居住址</p>
+					</div>
+					<div class="col-xs-7">
+						<input id="city1" placeholder="请输入省份"></input>
+					</div>
+					<div class="col-xs-1">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="midd">
+				<div class="midd1">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-7">
+						<input id="city2" placeholder="请输入城市"></input>
+					</div>
+					<div class="col-xs-1">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="midd">
+				<div class="midd1">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-7">
+						<input id="city3" placeholder="请输入县区"></input>
+					</div>
+					<div class="col-xs-1">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="midd">
+				<div class="midd1">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-8">
+						<input type="text" id="city4" placeholder="请输入牙科详情地址"></input>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<!--五十度灰-->
+		<div class="gray"></div>
+		<div class="gray"></div>
+		<div class="gray"></div>
+		<!--五十度灰--结束-->
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>初诊日期</p>
+				</div>
+				<div class="col-xs-8">
+					<input type="date" placeholder="请选择初诊日期" />
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="cen">
+			<div class="col-xs-12">
+				<p>症状</p>
+			</div>
+			<div class="cen1">
+				<div class="col-xs-12 cen2">
+					<textarea class="id-2-2" id="symptom" placeholder="请填写目前出现的症状"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<!--五十度灰-->
+		<div class="gray"></div>
+		<!--五十度灰--结束-->
+
+		<div class="cen">
+			<div class="col-xs-12">
+				<p>病史</p>
+			</div>
+			<div class="cen1">
+				<div class="col-xs-12 cen2">
+					<textarea class="id-2-2" id="case_history" placeholder="请填写之前出现的病史"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<!--五十度灰-->
+		<div class="gray"></div>
+		<!--五十度灰--结束-->
+
+		<div class="cen">
+			<div class="col-xs-12">
+				<p>现诊断结果</p>
+			</div>
+			<div class="cen1">
+				<div class="col-xs-12 cen2">
+					<textarea class="id-2-2" id="now_result" placeholder="请填写目前出现的诊断结果"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<!--五十度灰-->
+		<div class="gray"></div>
+		<!--五十度灰--结束-->
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>就诊牙科</p>
+				</div>
+				<div class="col-xs-8">
+					<input type="text" id="title" placeholder="请输入就诊牙科"></input>
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>医师</p>
+				</div>
+				<div class="col-xs-8">
+					<input type="text" id="doctor" placeholder="请输入就诊医师"></input>
+				</div>
+			</div>
+		</div>
+
+		<div class="midd">
+			<div class="midd1">
+				<div class="col-xs-4">
+					<p>诊断日期</p>
+				</div>
+				<div class="col-xs-8">
+					<input type="date" placeholder="2015-6-8" />
+				</div>
+			</div>
+		</div>
+
+		<!--新增完成-->
+
+		<!--确认--开始-->
+		<div class="midd-btn">
+			<button id="addcase" type="button" class="btn btn-primary btn-1">确认创建</button>
+		</div>
+
+		<!--确认--结束-->
+
+		<!--日期插件-->
+		<script src="../time/js/date.js"></script>
+		<script src="../time/js/iscroll.js"></script>
+		<script>
+			$(function() {
+				$('#beginTime').date();
+				$('#beginTime2').date();
+			});
+		</script>
+		<div id="datePlugin"></div>
+		<!--下拉框-->
+
+	</body>
+
+</html>

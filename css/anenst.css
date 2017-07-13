@@ -1,0 +1,80 @@
+input {
+	border: 0;
+}
+body{
+	background-color: #f1f1f1;
+}
+h2 {
+	margin: 0px;
+}
+
+textarea {
+	border: 0px;
+}
+.row{
+	margin: 0px;
+}
+
+.top {
+	background-color: #45b7fe;
+	width: 100%;
+}
+
+.pic {
+	text-align: center;
+	height: 0.4rem;
+}
+.pic img {
+	float: left;
+}
+.pic-p {
+	float: right;
+	text-align: right;
+	height: 0.4rem;
+}
+
+.reco-in {
+	padding: 0.27rem 0 0;
+	height: 0.9rem;
+}
+.reco-in-ri {
+	padding: 0.31rem 0 0;
+}
+.reco-pic {
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.pic-p p {
+	color: #FFFFFF;
+	font-size: 0.28rem;
+}
+
+h1 {
+	margin: 0.03rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.gray {
+	height: 0.2rem;
+	background-color: #f1f1f1;
+	width: 100%;
+}
+.anenst{
+	width: 100%;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 0.25rem 0.3rem;
+}
+.text-left{
+	font-size: 0.28rem;
+	font-family:"宋体";
+	line-height: 0.5rem;
+}
+.anenst .top1{
+	max-height: 4rem;
+}
+.anenst .top2{
+	max-height: 1.5rem;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/info.css" />
+		<link rel="stylesheet" href="../css/a.css" />
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="../dist/js/layout.js"></script>
+		<!--页面点击事情js-->
+		<script type="text/javascript" src="../js/click.js"></script>
+		<!--图片上传js-->
+		<script type="text/javascript" src="../js/img.js"></script>
+
+	</head>
+
+	<body class="notopscroll">
+		<!--顶部导航-->
+		<div id="father">
+			<div class="top">
+				<div class="recommend clearfix top1">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-4">
+						<div class="reco-in">
+							<a href="">
+								<div class="reco-pic pic">
+									<h1>设置</h1>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--顶部导航--完-->
+
+			<!--五十度灰-->
+			<div class="gray"></div>
+			<!--五十度灰--结束-->
+
+			<!--个人信息详情-->
+
+			<div class="id">
+				<div class="col-xs-8">
+					<div class="id-1">
+						<h2 class="id-1-1">头像</h2>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="id-2">
+						<div class="head" id="preview">
+							<img id="imghead" src='../img/images/head.png'>
+						</div>
+						<a href="#">
+							<div class="id-img"><img src="../img/images/you.png"></div>
+						</a>
+					</div>
+				</div>
+				<input class="memberphoto-upload" type="file" onchange="previewImage(this)" />
+			</div>
+
+			<div class="id" id="upName">
+				<div class="col-xs-8">
+					<div class="id-1">
+						<h2 class="id-1-1">昵称</h2>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="id-2">
+						<div class="id-2-h2">
+							<h2>小蘑菇</h2></div>
+						<div class="id-img"><img src="../img/images/you.png"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="id" id="upIphone1">
+				<div class="col-xs-6">
+					<div class="id-1">
+						<h2 class="id-1-1">登录手机</h2>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="id-2">
+						<div class="id-2-h2">
+							<h2>15825907665</h2></div>
+						<div class="id-img"><img src="../img/images/you.png"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="id" id="forPass">
+				<div class="col-xs-8">
+					<div class="id-1">
+						<h2 class="id-1-1">修改登录密码</h2>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="id-2">
+						<div class="id-img"><img src="../img/images/you.png"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="id" id="detalis">
+				<div class="col-xs-8">
+					<div class="id-1">
+						<h2 class="id-1-1">更多详细资料</h2>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="id-2">
+						<div class="id-img"><img src="../img/images/you.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--个人信息--结束-->
+		<script>
+			$(document).ready(function() {
+				$("#preview").click(
+					function() {
+						var a = document.getElementById("imghead")
+						var b = a.src;
+						alert(b);
+					});
+			});
+		</script>
+	</body>
+
+</html>

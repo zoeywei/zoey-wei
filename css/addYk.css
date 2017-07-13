@@ -1,0 +1,268 @@
+	body {
+		background-color: #ffffff;
+		font-family: "微软雅黑";
+	}
+	
+	input {
+		border: 0;
+	}
+	
+	.col-xs-1,
+	.col-xs-10,
+	.col-xs-11,
+	.col-xs-12,
+	.col-xs-2,
+	.col-xs-3,
+	.col-xs-4,
+	.col-xs-5,
+	.col-xs-6,
+	.col-xs-7,
+	.col-xs-8,
+	.col-xs-9 {
+		padding: 0!important
+	}
+	
+	.top {
+		background-color: #45b7fe;
+		width: 100%;
+	}
+	
+	.top1 {
+		padding: 0 0.2rem;
+	}
+	
+	.pic {
+		text-align: center;
+		height: 0.4rem;
+	}
+	
+	.pic img {
+		float: left;
+	}
+	
+	.pic-p {
+		float: right;
+		text-align: right;
+		height: 0.4rem;
+	}
+	
+	.reco-in {
+		padding: 0.27rem 0 0;
+		height: 0.9rem;
+	}
+	
+	.reco-in-ri {
+		padding: 0.31rem 0 0;
+	}
+	
+	.reco-pic {
+		overflow: hidden;
+		vertical-align: bottom;
+	}
+	
+	.pic-p p {
+		color: #FFFFFF;
+		font-size: 0.28rem;
+	}
+	
+	h1 {
+		margin: 0.03rem;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	.gray {
+		height: 0.3rem;
+		background-color: #f1f1f1;
+		width: 100%;
+	}
+	
+	.midd {
+		width: 100%;
+		height: 5.2rem;
+	}
+	
+	.midd .midd1 {
+		text-align: left;
+		height: 0.85rem;
+		padding: 0.2rem;
+	}
+	
+	.midd .midd2 {
+		text-align: left;
+		height: 0.85rem;
+		padding: 0.2rem;
+		border-bottom: 1px solid #999999;
+	}
+	
+	.midd .midd1 .midd-bo {
+		height: 0.65rem;
+		width: 100%;
+		border-bottom: 1px solid #999999;
+	}
+	
+	.midd .midd1 p {
+		font-size: 0.28rem;
+		line-height: 0.45rem;
+		max-height: 0.45rem;
+	}
+	.midd .midd1 p input {
+		width: 100%;
+	}
+	
+	.midd .midd-inp {
+		font-size: 0.28rem;
+		height: 0.45rem;
+		width: 100%;
+	}
+	
+	.midd .midd-img {
+		padding: 0.1rem;
+	}
+	
+	.midd .photo {
+		text-align: center;
+		border: 1px dashed #999999;
+		height: 1.7rem;
+		background:url(../img/images/initial.png) center;
+	}
+	
+	.midd .photo img {
+		min-width: 90%;
+		max-width: 100%;
+		margin-top: 0.05rem;
+		height: 1.6rem;
+	}
+	
+	.midd .midd3 {
+		min-height: 2.3rem;
+		height: auto;
+		padding: 0.2rem;
+	}
+	
+	.midd .midd4 .midd-tex {
+		height: 2.1rem;
+		width: 100%;
+		font-size: 0.28rem;
+		line-height: 0.35rem;
+		border: 0px;
+	}
+	
+	.midd .memberphoto-upload {
+		width: 100%;
+		height: 1.7rem;
+		position: absolute;
+		top: 0rem;
+		left: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		z-index: 10
+	}
+	.midd .midd1-1 {
+		padding: 0.2rem;
+		border: 1px solid #999999;
+	}
+	
+	.midd .midd4 {
+		padding: 0.2rem;
+		height: 2.9rem;
+	}
+	
+	.bottom {
+		background-color: #f1f1f1;
+	}
+	
+	.bottom .butt {
+		padding: 0.25rem;
+	}
+	
+	.butt-bor {
+		background-color: #45b7fe;
+		border: 1px solid #999999;
+		border-radius: 5px;
+	}
+	
+	.bottom .butt p {
+		text-align: center;
+		font-size: 0.3rem;
+		line-height: 0.4rem;
+		padding: 0.2rem;
+		color: #FFFFFF;
+	}
+	
+	footer {
+		display: none;
+		height: 4.5rem;
+	}
+	
+	.foot {
+		position: fixed;
+		background-color: #FFFFFF;
+		width: 100%;
+		height: 4.5rem;
+		z-index: 10;
+		bottom: 0px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	.foot .midd1 {
+		height: 0.85rem;
+	}
+	
+	.foot .col-xs-7 {
+		border-bottom: 1px solid #999999;
+	}
+	
+	.foot-bu1 {
+		padding: 0.1rem 30%;
+	}
+	
+	.foot-bu1 .foot-butt {
+		background-color: #45b7fe;
+		border: 1px solid #45b7fe;
+		border-radius: 10px;
+	}
+	
+	.foot-bu1 .foot-butt p {
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 0.28rem;
+		line-height: 0.4rem;
+	}
+	.col-xs-1 img{
+		width: 0.16rem;
+	}
+
+.col-xs-4 button{
+	font-size: 0.28rem;
+	width: 0.6rem;
+	max-height: 0.45rem;
+	text-align: center;
+	margin-right: 0.2rem;
+	float: right;
+	
+}
+#addimg2,#addimg3,#addimg4,#addimg5,#addimg6,#addimg{
+	display: none;
+}
+#add{
+	font-size: 0.28rem;
+	margin-left: 50%;
+	margin-bottom: 0.2rem;
+}
+.deleteicon{
+	font-size: 0.4rem;
+	position: absolute;
+	float: right;
+	width: 0.5rem;
+	height: 0.5rem;
+	z-index: 20;
+	right: 0;
+}
+.deleteicon1{
+	display: none;
+}
+#addimg000{
+	display: none;
+}

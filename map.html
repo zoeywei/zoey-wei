@@ -1,0 +1,158 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			#allmap {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: -30px;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+			
+			.BMap_noprint {
+				display: none;
+			}
+		</style>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=yTkWUV0wXCNX9YliOCOkhb9gA1DOTML9"></script>
+		<title>地图</title>
+		<link rel="stylesheet" href="css/a.css" />
+		<link rel="stylesheet" href="css/map.css" />
+		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/searchableSelect.css" />
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="dist/js/layout.js"></script>
+		<script type="text/javascript" src="js/jquery.searchableSelect.js"></script>
+	</head>
+
+	<body>
+
+		<div class="top">
+			<div class="col-xs-2" style="z-index: 1;">
+				<!--logo-->
+				<img class="logo" src="img/images/logo.png" alt="logo" />
+			</div>
+			<div class="top1">
+				<div class="col-xs-8">
+					<div class="col-xs-1"></div>
+					<div class="col-xs-2">
+						<img class="dian-top" src="img/top/dian-top.png" alt="坐标" />
+					</div>
+					<div class="col-xs-8">
+						<select>
+						    <option>洋河中路15号</option>
+						    <option>洋河中路16号</option>
+						    <option>洋河中路17号</option>	      
+						    <option>洋河中路18号</option>
+						    <option>洋河中路19号</option>
+						    <option>洋河中路20号</option>
+        				</select>
+					</div>
+					<div class="col-xs-1"></div>
+				</div>
+				<a href="login/search.html">
+					<div class="col-xs-1">
+						<!--搜索-->
+						<img  class="search" src="img/top/search.png" alt="搜索" />
+					</div>
+				</a>
+
+				<div class="col-xs-1" style="text-align: right;">
+					<div class="navbar-right">
+						<div id="fat-menu" class="dropdown">
+							<a data-toggle="dropdown" role="button">
+								<!--地图-->
+								<img class="map-img" src="img/images/map.png" />
+								<span></span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="drop3">
+								<li><a href="index.html">首页</a></li>
+								<li><a href="#">不要点我，没用</a></li>
+								<li><a href="#">不要点我，没用</a></li>
+								<li class="divider"></li>
+								<li><a href="#">不要点我，没用</a></li>
+								<li class="divider"></li>
+								<li><a href="#" onclick="javascript :history.back(-1);">返回</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--地图接口-->
+		<div id="allmap"></div>
+
+		<script>
+			$(function() {
+				$('select').searchableSelect();
+			});
+		</script>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	//创建和初始化地图函数：
+	function initMap() {
+		createMap(); //创建地图
+		addMapOverlay(); //向地图添加覆盖物
+		setMapEvent(); //设置地图事件
+		addMapControl(); //向地图添加控件
+	}
+
+	function createMap() {
+		map = new BMap.Map("allmap");
+		map.centerAndZoom(new BMap.Point(106.573681, 29.538727), 12);
+	}
+
+	function setMapEvent() {
+		map.enableScrollWheelZoom();
+		map.enableKeyboard();
+		map.enableDragging();
+		map.enableDoubleClickZoom()
+	}
+
+	function addClickHandler(target, window) {
+		target.addEventListener("click", function() {
+			target.openInfoWindow(window);
+		});
+	}
+
+	function addMapOverlay() {
+		var data_infon = [
+			[106.505998, 29.527512],
+			[106.572292, 29.640929]
+		];
+		var clsname = 'map';
+		var ico = [
+			['<div class="out"><div class="' + clsname + '"><div class="white"><div class="cue cue1"><p>新</p></div></div><div class="map1"><div class="col-xs-12"><img class="img" src="img/images/map-1.png" /></div><div class="col-xs-12"><p>八益牙科</p></div></div></div></div>', new BMap.Size(120, 162)],
+			['<div class="out"><div class="' + clsname + '"><div class="white"><div class="cue cue2"><p>荐</p></div></div><div class="map1"><div class="col-xs-12"><img class="img" src="img/images/map-1.png" /></div><div class="col-xs-12"><p>庞春华牙科诊所</p></div></div></div></div>', new BMap.Size(120, 162)]
+		];
+		for (var i = 0; i < data_infon.length; i++) {
+			var marker = new BMap.Marker(new BMap.Point(data_infon[i][0], data_infon[i][1]), {
+				icon: new BMap.Icon(ico[i][0], ico[i][1], {
+					anchor: new BMap.Size(50, 150)
+				})
+			});
+			map.addOverlay(marker);
+		}
+	}
+	$(document).on('click', '.BMap_Marker .map', function() {
+			$(".map").removeClass("map-1");
+			$(this).addClass("map-1");
+		});
+	//向地图添加控件
+	function addMapControl() {
+		//暂时设置无控件
+	}
+	var map;
+	initMap();
+</script>
