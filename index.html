@@ -1,214 +1,2260 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+<head lang="en">
     <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/index1.css"/>
-    <link rel="stylesheet" href="css/searchableSelect.css"/>
-
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="dist/js/layout.js"></script>
-
-    <script type="text/javascript" src="js/jquery.searchableSelect.js"></script>
-    <!--页面点击事情js-->
-    <script type="text/javascript" src="js/click.js"></script>
+    <title>仿迅雷看看首页</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/kankan.js"></script>
 </head>
-
 <body>
-<!--顶部导航开始-->
-<div class="top">
-    <div class="col-xs-2">
-        <!--logo-->
-        <img class="logo" src="img/top/logo-top.png"/>
-    </div>
-    <div class="top1">
-        <div class="col-xs-8">
-            <div class="col-xs-2">
-                <img class="dian-top" src="img/top/dian-top.png"/>
-            </div>
-            <div class="col-xs-9">
-                <select>
-                    <option>洋河中路15号</option>
-
-                    <option>洋河中路16号</option>
-                    <option>洋河中路17号</option>
-                    <option>洋河中路18号</option>
-                    <option>洋河中路19号</option>
-                    <option>洋河中路20号</option>
-                    <option>洋河中路21号</option>
-                    <option>洋河中路22号</option>
-                    <option>洋河中路23号</option>
-                    <option>洋河中路24号</option>
-                    <option>洋河中路25号</option>
-                    <option>洋河中路26号</option>
-                </select>
-            </div>
-            <div class="col-xs-1"></div>
+<!--头部区域-->
+<div id="header">
+    <div class="header-wrapper">
+        <div class="header-logo">
+            <h1>
+                <a href="">天天看看<b></b></a>
+            </h1>
         </div>
-        <div class="col-xs-1" id="search">
-            <!--搜索-->
-            <img class="search" src="img/top/search.png"/>
-        </div>
-        <div class="col-xs-1" id="map">
-            <!--地图-->
-            <img class="gps" src="img/top/gps.png"/>
-        </div>
-    </div>
-</div>
-<!--顶部导航结束-->
-<div class="gray"></div>
-<!--中间--开始-->
-<div class="midd" id="yake-1">
-    <div class="col-xs-4">
-        <!--医院名称-->
-        <img src="img/top/1.png"/>
-    </div>
-    <div class="col-xs-8">
-        <p class="p1">重庆牙科医院渝中区牙病防</p>
+        <div class="header-search">
+            <form action="">
+                <input type="text" value="热血" class="search-text"/>
+                <button type="submit">搜索</button>
+            </form>
+            <a href="">排行榜<i></i></a>
 
-        <div class="midd1">
-            <div class="col-xs-1"><img class="hdian" src="img/top/Hdian.png"/></div>
-            <!--医院地址-->
-            <div class="col-xs-11">
-                <p class="p2">邹容支路2号</p>
-            </div>
-        </div>
-        <div class="midd2">
-            <div class="col-xs-1"><img class="iphone" src="img/top/iphone.png"></div>
-            <!--医院电话-->
-            <div class="col-xs-8">
-                <p class="p3">023-63714109</p>
-            </div>
-            <div class="col-xs-2"><img class="message" src="img/top/message.png"></div>
-            <!--聊天图标-->
-        </div>
-    </div>
-</div>
-
-<div class="gray"></div>
-
-<div class="midd" id="yake-2">
-    <div class="col-xs-4">
-        <!--医院名称-->
-        <img src="img/top/2.png"/>
-    </div>
-    <div class="col-xs-8">
-        <p class="p1">信逸牙科</p>
-
-        <div class="midd1">
-            <div class="col-xs-1"><img class="hdian" src="img/top/Hdian.png"/></div>
-            <!--医院地址-->
-            <div class="col-xs-11">
-                <p class="p2">南岸区花园二村滨湖路(万寿路西侧)</p>
-            </div>
-        </div>
-        <div class="midd2">
-            <div class="col-xs-1"><img class="iphone" src="img/top/iphone.png"></div>
-            <!--医院电话-->
-            <div class="col-xs-8">
-                <p class="p3">023-63714109</p>
-            </div>
-            <div class="col-xs-2"><img class="message" src="img/top/message.png"></div>
-            <!--聊天图标-->
-        </div>
-    </div>
-</div>
-
-<div class="gray"></div>
-
-<div class="midd" id="yake-3">
-    <div class="col-xs-4">
-        <!--医院名称-->
-        <img src="img/top/3.png"/>
-    </div>
-    <div class="col-xs-8">
-        <p class="p1">重庆医科大学附属口腔医院</p>
-
-        <div class="midd1">
-            <div class="col-xs-1"><img class="hdian" src="img/top/Hdian.png"/></div>
-            <!--医院地址-->
-            <div class="col-xs-11">
-                <p class="p2">沙南街4-8号(市一中大门旁)</p>
-            </div>
-        </div>
-        <div class="midd2">
-            <div class="col-xs-1"><img class="iphone" src="img/top/iphone.png"></div>
-            <!--医院电话-->
-            <div class="col-xs-8">
-                <p class="p3">023-63714109</p>
-            </div>
-            <div class="col-xs-2"><img class="message" src="img/top/message.png"></div>
-            <!--聊天图标-->
-        </div>
-    </div>
-</div>
-
-<div class="gray"></div>
-
-<div class="midd" id="yake-4">
-    <div class="col-xs-4">
-        <!--医院名称-->
-        <img src="img/top/4.png"/>
-    </div>
-    <div class="col-xs-8">
-        <p class="p1">八益牙科</p>
-
-        <div class="midd1">
-            <div class="col-xs-1"><img class="hdian" src="img/top/Hdian.png"/></div>
-            <!--医院地址-->
-            <div class="col-xs-11">
-                <p class="p2">沙坪坝天陈路22号沙铁大厦一楼（站西路口重师南门</p>
-            </div>
-        </div>
-        <div class="midd2">
-            <div class="col-xs-1"><img class="iphone" src="img/top/iphone.png"></div>
-            <!--医院电话-->
-            <div class="col-xs-8">
-                <p class="p3">023-63714109</p>
-            </div>
-            <div class="col-xs-2"><img class="message" src="img/top/message.png"></div>
-            <!--聊天图标-->
-        </div>
-    </div>
-</div>
-
-<!--中间--结束-->
-<footer class="bg-white container-box">
-    <div class="row foot bg-white">
-        <dov class="footnav-box clearfix">
-            <a href="index.html">
-                <div class="footnav active">
-                    <span class="icon1"></span>
-
-                    <p>首页</p>
+            <div class="header-search-drop">
+                <div class="header-search-drop-item">
+                    <b class="one">1</b>
+                    <span class="name">巨蟒惊魂（泰国）</span>
+                    <span class="classify">（电影）</span>
+                    <span class="num"></span>
+                    <i></i>
                 </div>
-            </a>
-            <a href="health.html">
-                <div class="footnav">
-                    <span class="icon2"></span>
-
-                    <p>保健</p>
+                <div class="header-search-drop-item">
+                    <b class="two">2</b>
+                    <span class="name">金钱诱惑</span>
+                    <span class="classify">（电影）</span>
+                    <span class="num"></span>
+                    <i></i>
                 </div>
-            </a>
-            <a href="my/myindex.html">
-                <div class="footnav">
-                    <span class="icon3"></span>
-
-                    <p>我的</p>
+                <div class="header-search-drop-item">
+                    <b class="two">3</b>
+                    <span class="name">与龙共舞</span>
+                    <span class="classify">（电影）</span>
+                    <span class="num"></span>
+                    <i></i>
                 </div>
-            </a>
-        </dov>
+                <div class="header-search-drop-item">
+                    <b></b>
+                    <span class="name">风云再起</span>
+                    <span class="classify">（电视剧）</span>
+                    <span class="num">116集全</span>
+                    <i></i>
+                </div>
+                <div class="header-search-drop-item">
+                    <b></b>
+                    <span class="name">粟裕大将</span>
+                    <span class="classify">（电视剧）</span>
+                    <span class="num">23集全</span>
+                    <i></i>
+                </div>
+                <div class="header-search-drop-item">
+                    <b></b>
+                    <span class="name">最强战士</span>
+                    <span class="classify">（动漫）</span>
+                    <span class="num">13集全</span>
+                    <i></i>
+                </div>
+                <div class="header-search-drop-item">
+                    <b></b>
+                    <span class="name">WWE</span>
+                    <span class="classify">（综艺剧）</span>
+                    <span class="num">2016-07-06期</span>
+                    <i></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-link-list">
+            <div class="login">
+                <i></i>
+                <a href="">登录</a> / <a href="">注册</a>
+            </div>
+            <div class="get-vip">
+                <i></i>
+                <a href="">开通会员</a>
+            </div>
+            <div class="collect">
+                <i></i>
+                <a href="">收藏</a>
+            </div>
+            <div class="record">
+                <i></i>
+                <a href="">收藏</a>
+            </div>
+            <div class="client-side">
+                <i></i>
+                <a href="">客户端</a>
+            </div>
+            <div class="app">
+                <i></i>
+                <a href="">APP</a>
+            </div>
+        </div>
+        <div class="app-drop">
+            <i></i>
+            <img src="images/qr-kk-mb.png" alt=""/>
+            <span>下载看看视频APP</span>
+            <a href="">进入产品中心</a>
+        </div>
     </div>
-</footer>
+</div>
+<!--头部区域结束-->
 
-<script>
-    $(function () {
-        $('select').searchableSelect();
-    });
-</script>
+<!--导航区域-->
+<div id="nav-background">
+    <div id="nav">
+        <div class="nav-left">
+            <a href="">首页</a>
+            <a href="">娱乐</a>
+            <a href="">电视剧</a>
+            <a href="">电影</a>
+            <a href="">网络电影</a>
+            <a href="">综艺</a>
+            <a href="">动漫</a>
+            <a href="">纪录片</a>
+            <a href="">公开课</a>
+            <a href="">看看出品</a>
+            <span></span>
+            <a href="">资讯</a>
+            <a href="">搞笑</a>
+            <a href="">时尚</a>
+            <a href="">音乐</a>
+        </div>
+        <div class="nav-right">
+            <a href="" class="vip"><i></i>会员</a>
+            <span></span>
+            <a href="" class="star-zone">明星空间</a>
+        </div>
+    </div>
+</div>
+
+
+<!--导航区域结束-->
+
+<!--轮播区域-->
+<div id="focus-background">
+    <div id="focus-box">
+        <ul class="small-pic">
+            <li class="hover">
+                <a href="">
+                    <img src="images/small1.jpg" alt="" backImg="./images/big1.jpg" backColor="#4F6A4B"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small2.jpg" alt="" backImg="./images/big2.jpg" backColor="#000000"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small3.jpg" alt="" backImg="./images/big3.jpg" backColor="#020202"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small4.jpg" alt="" backImg="./images/big4.jpg" backColor="#0C0302"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small5.jpg" alt="" backImg="./images/big5.jpg" backColor="#070302"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small6.jpg" alt="" backImg="./images/big6.jpg" backColor="#0B0715"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small7.jpg" alt="" backImg="./images/big7.jpg" backColor="#190707"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small8.jpg" alt="" backImg="./images/big8.jpg" backColor="#0E0F0A"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/small9.jpg" alt="" backImg="./images/big9.jpg" backColor="#9CAACD"/>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<!--轮播区域结束-->
+
+<!--今日看点区域-->
+<div id="today" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">今日看点</a></h3>
+            <a href="">萌物不止格鲁特另有树人暖人心</a>
+            <span>|</span>
+            <a href="">《谁是你的菜》梅婷首做红烧肉惊艳全场</a>
+            <span>|</span>
+            <a href="">《亚瑟王：斗兽争霸》贝克汉姆秀演技</a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="left">
+            <div class="pic-big">
+                <a href=""><img src="./images/06b27d91af03e33a8d4dcec94121f074.jpg" alt=""/></a>
+            </div>
+            <div class="text">
+                <a href="">21岁复读生高考首日跳楼身亡家属悲痛欲绝</a>
+
+                <p>现场惨不忍睹</p>
+            </div>
+        </div>
+        <div class="right">
+            <ul class="content-box">
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/630da8cc8cd299cf41a3fed8157ef1da.gif" alt=""/></a>
+                        <a class="xianchang" href="">现场</a>
+                    </div>
+                    <div class="text">
+                        <a href="">女子被撞后惨遭二次碾压</a>
+
+                        <p>寒心！路人皆无视走过</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/f56b129c6dd0ab2577128af8cb99c3c4.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">习近平主席抵达哈萨克斯坦</a>
+
+                        <p>开始进行国事访问</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/5aa2d4ec791b10774c2cc07b09232bf5.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">可怕！虎妈9秒揍儿子8拳</a>
+
+                        <p>背后真相令人意外</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/31a419ae86c2aca4f5192e9e4eeb4f85.gif" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">实拍老头公交上强吻小女孩</a>
+
+                        <p>赞！正义女司机大声喝止</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/ca52be90ee22ef2fc48dfca6f943deee.jpg" alt=""/></a>
+                        <a class="xianchang" href="">星闻</a>
+                    </div>
+                    <div class="text">
+                        <a href="">白百何素颜出行身材发福</a>
+
+                        <p>无名指戒指很抢镜</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/56f8d6c924b6568d6238b8b0b1fa3829.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">35岁唐宁半夜宣布已离婚</a>
+
+                        <p>她被称为最美师妃暄</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/701adf4ee19351abb98b5b028a3909d3.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">众多微博娱乐八卦账号被封</a>
+
+                        <p>卓伟、赵五儿等均在列</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/789f5babaf8d53672a6a26f93face442.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">千年“吸血鬼”帅到没朋友</a>
+
+                        <p>五分钟看完《刀锋战士3》</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!--今日看点区域结束-->
+
+<!--娱乐头条区域-->
+<div id="yule" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">娱乐头条</a></h3>
+            <a href="">明星专访</a>
+            <span>|</span>
+            <a href="">八卦绯闻</a>
+            <span>|</span>
+            <a href="">娱乐大事件</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <ul class="content-box">
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/faf924196ec963fbb2ddcb85e1295288.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">这样的王菲你见过么？</a>
+
+                    <p>肌肤胜雪姿态妖娆</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/11d636d6b3d1374614810bd806c31272.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">黄晓明黑超现身霸气十足</a>
+
+                    <p>获众黑衣人护驾排场大</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/9ac2d25af1cad3f397c30f540c654bf8.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">刘亦菲人美心善！</a>
+
+                    <p>养多只流浪猫帮治病寻主</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/ba08f128784c0f9fb37f6acd2bd40c13.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">金巧巧二胎喜得爱子</a>
+
+                    <p>老公于冬陪身旁幸福满满</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/72bfbbed4e779b9fbcb1f930b707c26b.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">刘诗诗现身率性不失妩媚</a>
+
+                    <p>皮肤白皙红润似少女</p>
+                </div>
+            </li>
+            <li class="clear-margin">
+                <div class="pic-small">
+                    <a href=""><img src="./images/fb3ae2d26cc235c8634cc486026e24e4.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">郑爽短裙皮靴秀长腿</a>
+
+                    <p>甜美迷人尽显妩媚</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/4d39fb1891acb6c1ddd9332f83908092.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">王菲刘嘉玲饮酒聚会</a>
+
+                    <p>天后的酒量相当好</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/99880896fcc95bb606d59c59a043eaa3.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">郑爽台下独自举杯玩手机</a>
+
+                    <p>与刘诗诗无交流</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/921dfe25b98f66041e531a44f302bb6b.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">众星为高考考生加油</a>
+
+                    <p>王源和易烊千玺拉对联</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/98cc334b4a5a700ab2883fad00179a6b.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">邓紫棋参加节目有问必答</a>
+
+                    <p>自曝曾用修图软件</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/f469a7fc012b58c038498ea7c4cff479.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">59岁克鲁尼喜迎龙凤胎</a>
+
+                    <p>发言人调侃：需要打镇定剂</p>
+                </div>
+            </li>
+            <li class="clear-margin">
+                <div class="pic-small">
+                    <a href=""><img src="./images/53e5565028231a968102cb1f9643febf.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">陈乔恩再当伴娘美上热搜</a>
+
+                    <p>锁骨美背细腿样样迷人</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--娱乐头条区域结束-->
+
+<!--电视剧区域-->
+<div id="dianshiju" class="box small-tab">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">电视剧</a></h3>
+            <a href="">偶像言情</a>
+            <span>|</span>
+            <a href="">军旅谍战</a>
+            <span>|</span>
+            <a href="">古装武侠</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+        <div class="title-right">
+            <h3><a href="">热播榜</a></h3>
+            <a class="more" href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="left">
+            <div class="pic-big">
+                <img src="./images/61a9d4c2678a91e95fc122d853f1437a.jpg" alt=""/>
+                <a href="" class="no-background"></a>
+                <span class="pre"></span>
+                <span class="next"></span>
+            </div>
+            <div class="text">
+                <a href="">怒放</a>
+                <a class="hidden" href="">终极教师2</a>
+                <a class="hidden" href="">云水怒</a>
+
+                <p>林永健的抗战爱情</p>
+
+                <p class="hidden">高颜值校园后宫剧</p>
+
+                <p class="hidden">都教授版抗战护金</p>
+                <span>44集全</span>
+                <span class="hidden">36集全</span>
+                <span class="hidden">40集全</span>
+                <ul class="circle">
+                    <li class="chose " backImg="./images/61a9d4c2678a91e95fc122d853f1437a.jpg"></li>
+                    <li backImg="./images/377a237a606cf1f22ce32054aad85a55.jpg"></li>
+                    <li backImg="./images/9853135eabb808eb81466d60ce08a599.jpg"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="content-box">
+                <li class="hot">
+                    <div class="pic-small">
+                        <a href=""><img src="./images/b2dbfd1416d2f1448f597ec373b8aa9e.jpg" alt=""/></a>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>1</span>
+                                    <b>粟裕大将（高清版）</b>
+                                    <i class="icon icon-up"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hot-text">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>2</span>
+                                    <b>风云再起</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>3</span>
+                                    <b>粟裕大将</b>
+                                    <i class="icon icon-up"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>4</span>
+                                    <b>长沙保卫战</b>
+                                    <i class="icon icon-up"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>5</span>
+                                    <b>杉杉来了</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>6</span>
+                                    <b>陆军一号</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>7</span>
+                                    <b>邻居也疯狂</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>8</span>
+                                    <b>下一站幸福</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>9</span>
+                                    <b>天鹅套索</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>10</span>
+                                    <b>隋唐英雄</b>
+                                    <i class="icon icon-down"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/19f7939b1b0ffdb5827a8ae856c21208.jpg" alt=""/></a>
+                        <span>120集全</span>
+                    </div>
+                    <div class="text">
+                        <a href="">隋唐英雄</a>
+
+                        <p>百位明星倾力加盟</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/e063709bd287b8670775753c2c97e6ed.gif" alt=""/></a>
+                        <span>35集全</span>
+                    </div>
+                    <div class="text">
+                        <a href="">长沙保卫战</a>
+
+                        <p>张丰毅变铁血军神</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/1258bacdb52a8c983edb0a7c07483949.jpg" alt=""/></a>
+                        <span>40集全</span>
+                    </div>
+                    <div class="text">
+                        <a href="">新倚天屠龙记</a>
+
+                        <p>金庸经典武侠剧</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/7420b4bf1fedaa11abf7cd777a8b57c3.jpg" alt=""/></a>
+                        <span>38集全</span>
+                    </div>
+                    <div class="text">
+                        <a href="">我是特种兵2</a>
+
+                        <p>当代军旅题材剧</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/42e01ee06d368fe6d05353643a47f2b1.jpg" alt=""/></a>
+                        <span>52集全</span>
+                    </div>
+                    <div class="text">
+                        <a href="">闯关东</a>
+
+                        <p>历经波折的名族迁移</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/c251311663c0e32f872464c2c9f2fc9e.jpg" alt=""/></a>
+                        <span>48集全</span>
+                    </div>
+                    <div class="text">
+                        <a href="">老男孩</a>
+
+                        <p>“烨晨”主题先导片正式上线</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--电视剧区域结束-->
+
+<!--个人中心区域-->
+<div id="center" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">个人中心</a></h3>
+            <a href="" i="like" class="border-bot">猜您喜欢</a>
+            <span>&nbsp;</span>
+            <a href="" i="history">观看记录</a>
+            <span>&nbsp;</span>
+            <a href="" i="collect">我的收藏</a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="like">
+            <div class="move">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/5f4386b886cb156e40251159da2eb883.jpg" alt=""/>
+                        </a>
+
+                        <p>粟裕大将（高清TV版）</p>
+                        <span>粟裕将军戎马一生</span>
+                        <i>26集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/4757de0552da6dd68a34d4f2a6753ff4.jpg" alt=""/>
+                        </a>
+
+                        <p>长沙保卫战</p>
+                        <span>张丰毅变铁血军神</span>
+                        <i>35集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/7c835f4808156c46d7ff8eb1ca7036d6.jpg" alt=""/>
+                        </a>
+
+                        <p>风云再起</p>
+                        <span>文东归来热血抗日</span>
+                        <i>116集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/573c0c6474ab55f76ef271d843f99970.jpg" alt=""/>
+                        </a>
+
+                        <p>还记得陪你打架的兄弟吗</p>
+                        <span>那些还会打架的岁月</span>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/5f4386b886cb156e40251159da2eb883.jpg" alt=""/>
+                        </a>
+
+                        <p>粟裕大将</p>
+                        <span>粟裕将军戎马一生</span>
+                        <i>23集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/554e39139a3c36f4fbddcaa0afc1be37.jpg" alt=""/>
+                        </a>
+
+                        <p>最强战士迷你特工之英雄的诞生</p>
+                        <span>最强战士锄强扶弱</span>
+                        <i>13集全</i>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/96836287bc2020c6cb249650c166ccc7.jpg" alt=""/>
+                        </a>
+
+                        <p>陆军一号</p>
+                        <span>聚焦陆航空中突击</span>
+                        <i>36集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/c0882b16d7fe5407f75beca225582c81.jpg" alt=""/>
+                        </a>
+
+                        <p>杉杉来了</p>
+                        <span>吃货遇上霸道总裁</span>
+                        <i>34集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/730782a795b785e8438db1c07e89059c.jpg" alt=""/>
+                        </a>
+
+                        <p>开房美梦</p>
+                        <span>梦想破灭空欢喜</span>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/30137dfa4d067671b5dc585e8b04536f.jpg" alt=""/>
+                        </a>
+
+                        <p>偷情</p>
+                        <span>偷情男女情感纠葛</span>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/8a0bf6149d3810eb6a6819b58b7ba80c.jpg" alt=""/>
+                        </a>
+
+                        <p>性在够辣</p>
+                        <span>香港超性感R级片</span>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/8fe94a04cbe84d5ff8e14b5b7342a954.jpg" alt=""/>
+                        </a>
+
+                        <p>风语者</p>
+                        <span>尼古拉斯凯奇大片</span>
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/20e786cc9aa7ccd3ec556fc45924c9d1.jpg" alt=""/>
+                        </a>
+
+                        <p>天鹅套索</p>
+                        <span>千金女变落魄屌丝</span>
+                        <i>32集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/6f90efa0dd0f37ae898e41bc00afdadf.jpg" alt=""/>
+                        </a>
+
+                        <p>隋唐英雄</p>
+                        <span>百位明星倾力加盟</span>
+                        <i>120集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/af60acb840c8af87569aab38f4467d44.jpg" alt=""/>
+                        </a>
+
+                        <p>兔小贝儿歌</p>
+                        <span>经典儿歌寓教于乐</span>
+                        <i>483集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/ceb7e425a990af4d192e3f8b50948f59.jpg" alt=""/>
+                        </a>
+
+                        <p>下一站婚姻</p>
+                        <span>刘涛演绎二次婚姻</span>
+                        <i>34集全</i>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/2e7f32b798a5614fe001c8b926789f52.jpg" alt=""/>
+                        </a>
+
+                        <p>原罪</p>
+                        <span>安吉莉娜变身坏女人</span>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/ae2a4cf6fa6767eaf0442919b2af5d91.jpg" alt=""/>
+                        </a>
+
+                        <p>我是特种兵2</p>
+                        <span>当代军旅题材剧</span>
+                        <i>38集全</i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-pre">
+                <p href=""></p>
+            </div>
+            <div class="btn-next">
+                <p href=""></p>
+            </div>
+        </div>
+
+        <div class="history">
+            <p>请登录后，查看云观看记录</p>
+            <a href="">登录</a>
+        </div>
+        <div class="collect">
+            <p>请登录后查看精彩收藏视频！</p>
+            <a href="">登录</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!--个人中心区域结束-->
+
+<!--感兴趣标签区域-->
+<div class="hobby">
+    <p>您可能干兴趣的标签上</p>
+
+    <div>
+        <a href="">动作</a>
+        <a href="">喜剧</a>
+        <a href="">恐怖</a>
+        <a href="">爱情</a>
+        <a href="">剧情</a>
+        <a href="">周星驰</a>
+        <a href="">甄子丹</a>
+        <a href="">香港</a>
+        <a href="">台湾</a>
+    </div>
+    <span>点击标签可切换对应推送内容</span>
+</div>
+
+<!--感兴趣标签区域结束-->
+
+<!--电影区域-->
+<div id="movie" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">电影</a></h3>
+            <a href="">偶像言情</a>
+            <span>|</span>
+            <a href="">军旅谍战</a>
+            <span>|</span>
+            <a href="">古装武侠</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+        <div class="title-right">
+            <h3><a href="">电影热播榜</a></h3>
+            <a class="more" href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <ul class="content-box movie-hot">
+            <li class="hot">
+                <div class="pic-small">
+                    <a href=""><img src="./images/aceda0427f6d9156fae6be197de39fd5.jpg" alt=""/></a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>1</span>
+                                <b>武侠</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hot-text">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>2</span>
+                                <b>天使的性</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>3</span>
+                                <b>性在够辣</b>
+                                <i class="icon icon-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <b>原罪</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>5</span>
+                                <b>风语者</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>6</span>
+                                <b>醉猴</b>
+                                <i class="icon icon-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>7</span>
+                                <b>赤裸性对抗</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>8</span>
+                                <b>好莱坞动作英雄榜</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/cbae4912b89a13ac61085b64249b7dbc.jpg" alt=""/></a>
+
+                    <p>文章李连杰功夫喜剧</p>
+                </div>
+                <div class="text">
+                    <a href="">不二神探</a>
+
+                    <span>8<b>.3</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/89df5ced954d5e1e19ba3aef73cfa8c2.jpg" alt=""/></a>
+
+                    <p>年度动作大戏</p>
+                </div>
+                <div class="text">
+                    <a href="">四大名捕2</a>
+
+                    <span>7<b>.9</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/6864720229abfb3ffe7a64066a584d6e.jpg" alt=""/></a>
+
+                    <p>罪案同行火爆开枪</p>
+                </div>
+                <div class="text">
+                    <a href="">烈日灼心</a>
+
+                    <span>9<b>.0</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/7f098706d1c70a4becb67dfd0bf398dd.jpg" alt=""/></a>
+
+                    <p>年度最酷励志大片</p>
+                </div>
+                <div class="text">
+                    <a href="">中国合伙人</a>
+
+                    <span>8<b>.6</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/c7b52966f925ecd442d89accd40915eb.jpg" alt=""/></a>
+
+                    <p>饮食男女2012</p>
+                </div>
+                <div class="text">
+                    <a href="">饮食男女2012</a>
+
+                    <span>5<b>.3</b></span>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+
+</div>
+<!--电影区域结束-->
+
+<!--新片预告-->
+<div id="new" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">新片预告</a></h3>
+            <a href="">异形：契约</a>
+            <span>|</span>
+            <a href="">蜘蛛侠：英雄归来</a>
+            <span>|</span>
+            <a href="">六人晚餐</a>
+            <span>|</span>
+            <a href="">52赫兹，我爱你</a>
+            <span>|</span>
+            <a href="">中国推销员</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="new-box">
+            <ul class="content-box content-box-main">
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/cdfe0717a9a2e5c744a039930dbd9d8f.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">雄狮·发布话题视频</a>
+
+                        <p>励志之旅揭示坚定信念</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/13414674cd37f1674f85b0ac7b2dc043.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">《引爆者》·8.25定档预告</a>
+
+                        <p>“戏妖”段奕宏化身孤胆英雄</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/4187bcd2c4914bbf34d7032e30512e37.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">闺蜜2·“国际版”特辑</a>
+
+                        <p>闺蜜团大尺度异国游</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/3434767e17b41be124c057e27545284a.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">中国推销员·曝最终预告</a>
+
+                        <p>七大看点领衔抗击外片围剿</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/7600b883e176bba64b4c7f9e9e9af09b.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">阿唐奇遇·友情版预告</a>
+
+                        <p>阿唐和机器人小来的真挚友情</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/64df8a591dd1993b462da3f80e008d59.jpg" alt=""/></a>
+                    </div>
+                    <div class="text">
+                        <a href="">父子雄兵·曝最新推广曲</a>
+
+                        <p>大鹏梁龙打造洗脑神曲</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--新片预告结束-->
+
+<!--网络电影区域-->
+<div id="wangluo-movie" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">网络电影</a></h3>
+            <a href="">校花驾到</a>
+            <span>|</span>
+            <a href="">武林群英会</a>
+            <span>|</span>
+            <a href="">阴阳先生</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+        <div class="title-right">
+            <h3><a href="">网络电影热播榜</a></h3>
+            <a class="more" href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <ul class="content-box movie-hot content-box-main">
+            <li class="hot">
+                <div class="pic-small">
+                    <a href=""><img src="./images/66a704dea424c93b75b366297c37e702.jpg" alt=""/></a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>1</span>
+                                <b>今晚好急</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hot-text">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>2</span>
+                                <b>开房美梦</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>3</span>
+                                <b>抗日传奇之下映追踪</b>
+                                <i class="icon icon-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <b>黑暗之光</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>5</span>
+                                <b>爱夜蒲之夜店女神</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>6</span>
+                                <b>三人床</b>
+                                <i class="icon icon-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>7</span>
+                                <b>18爱不爱之怦然心动</b>
+                                <i class="icon icon-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>8</span>
+                                <b>僵尸王爷</b>
+                                <i class="icon icon-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/81d1be7ab15924e2ac06ee258aba30f5.jpg" alt=""/></a>
+
+                    <p>性感女赌霸神秘失踪</p>
+                </div>
+                <div class="text">
+                    <a href="">超能赌霸</a>
+
+                    <span>7<b>.1</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/3d787c9eaf60211a1948ad6a045f2669.jpg" alt=""/></a>
+
+                    <p>爆笑破案套路撩妹</p>
+                </div>
+                <div class="text">
+                    <a href="">超级贱谍</a>
+
+                    <span>7<b>.4</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/61c117df0556943e4860035a515e6b8d.jpg" alt=""/></a>
+
+                    <p>周迅教你如何扫霾</p>
+                </div>
+                <div class="text">
+                    <a href="">霾没了</a>
+
+                    <span>9<b>.5</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/37ae703e0db126dba2c203c3d4062622.jpg" alt=""/></a>
+
+                    <p>演讲励志哥故事</p>
+                </div>
+                <div class="text">
+                    <a href="">阳光下的“声”命</a>
+
+                    <span>9<b>.5</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/d2f3984dd7699bca79df0f747b540bcb.jpg" alt=""/></a>
+
+                    <p>美女cp斗猥琐大叔</p>
+                </div>
+                <div class="text">
+                    <a href="">暧昧关系</a>
+
+                    <span>8<b>.3</b></span>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+<!--网络电影区域结束-->
+
+<!--会员尊享区域-->
+<div id="vip" class="box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">会员尊享</a></h3>
+            <a href="">热播</a>
+            <span>|</span>
+            <a href="" i="history">好评</a>
+            <span>|</span>
+            <a href="" i="collect">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="like">
+            <div class="move">
+                <ul>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/0693ef50d757b09effc5bc790cef5547.jpg" alt=""/></a>
+
+                            <p>不拘一格的荒诞搞笑</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">达芬奇的蛋</a>
+
+                            <span>7<b>.5</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/bb38538fc5099375a337d2fe6368d318.jpg" alt=""/></a>
+
+                            <p>吸血鬼校花邂逅清纯</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">我的吸血鬼学姐</a>
+
+                            <span>8<b>.0</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/81d1be7ab15924e2ac06ee258aba30f5.jpg" alt=""/></a>
+
+                            <p>恶趣味小清新的碰撞</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">剪刀手美少女</a>
+
+                            <span>8<b>.5</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/24917b8f32382ad4d706b882e7a795b5.jpg" alt=""/></a>
+
+                            <p>屌丝约爱爆笑囧事</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">极品桃花运</a>
+
+                            <span>8<b>.5</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/7691f61a3170f69c123546474cc11204.jpg" alt=""/></a>
+
+                            <p>倒霉蛋囧途寻宝藏</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">大闹囧途</a>
+
+                            <span>8<b>.0</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/b8bc0adf55bc79fe8ae1ba946cac8af8.jpg" alt=""/></a>
+
+                            <p>女警花贴身大作战</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">贴身卧底</a>
+
+                            <span>8<b>.6</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/68f83960a1f1463a058b79cec64d5579.jpg" alt=""/></a>
+
+                            <p>善良人的救赎之路</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">追凶者之双重身份</a>
+
+                            <span>0<b>.0</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/394ae567c50854d6dcaca1ad1a057d15.jpg" alt=""/></a>
+
+                            <p>网瘾少年寻宝之旅</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">盗墓惊魂之锁魂</a>
+
+                            <span>8<b>.0</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/6bea9ac1008549a4c025e88ce5a06af7.jpg" alt=""/></a>
+
+                            <p>中二少女对战外星人</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">疯狂外星人</a>
+
+                            <span>8<b>.0</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/915b47df2f5aa8be60f859640a9f557a.jpg" alt=""/></a>
+
+                            <p>魔界女妖复仇记</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">灵界警探2</a>
+
+                            <span>8<b>.5</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/219d6cac938a1effa490000a4eb9ea10.jpg" alt=""/></a>
+
+                            <p>美艳女妖大闹灵界</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">灵界警探1</a>
+
+                            <span>8<b>.5</b></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic-small">
+                            <a href=""><img src="./images/742b22f00a340c9f81f25e74a05834d7.jpg" alt=""/></a>
+
+                            <p>女白领遇职场潜规则</p>
+                            <span>VIP</span>
+                        </div>
+                        <div class="text">
+                            <a href="">死神契约之潘多拉魔</a>
+
+                            <span>8<b>.0</b></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-pre">
+                <p href=""></p>
+            </div>
+            <div class="btn-next">
+                <p href=""></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--会员尊享区域结束-->
+
+<!--动漫区域-->
+<div id="dongman" class="box small-tab">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">动漫</a></h3>
+            <a href="">亲子</a>
+            <span>|</span>
+            <a href="">新番</a>
+            <span>|</span>
+            <a href="">剧场</a>
+            <span>|</span>
+            <a href="">热血</a>
+            <span>|</span>
+            <a href="">儿歌</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="left">
+            <div class="pic-big">
+                <img src="./images/ff65684cc4304360ec9c5895939c0013.jpg" alt=""/>
+                <a href="" class="no-background"></a>
+                <span class="pre"></span>
+                <span class="next"></span>
+            </div>
+            <div class="text">
+                <a href="">食神魂</a>
+                <a class="hidden" href="">画江湖之杯莫停</a>
+                <a class="hidden" href="">太乙仙魔录之灵飞纪第二季</a>
+
+                <p>中华食神的热血冒险</p>
+
+                <p class="hidden">暗黑江湖风云争霸</p>
+
+                <p class="hidden">仙侠奇缘再踏征途</p>
+                <span>更新至04集</span>
+                <span class="hidden">更新至28集</span>
+                <span class="hidden">更新至08集</span>
+                <ul class="circle">
+                    <li class="chose " backImg="./images/ff65684cc4304360ec9c5895939c0013.jpg"></li>
+                    <li backImg="./images/dc5406c47c7f672daf09c17fcd4d8423.jpg"></li>
+                    <li backImg="./images/06ce809c4132d48c5bd6b917763836d9.jpg"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="content-box">
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/c7864c55465c2cfcfb1afbd001cffb7a.jpg" alt=""/></a>
+                        <span>更新至43集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">叫我僵小鱼 日常篇</a>
+
+                        <p>呆萌小僵尸日常搞趣</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/5f3b5eed6929978d9e32e3d12d1870c1.jpg" alt=""/></a>
+                        <span>更新至04集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">民间鬼术第3季</a>
+
+                        <p>犀角有异香 燃之能通灵</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/615fda31e22188545d4a8b18411c8bf6.jpg" alt=""/></a>
+                        <span>更新至485集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">兔小贝儿歌</a>
+
+                        <p>经典儿歌寓教于乐</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/1515a1815bf72fe30c4dce7ac13a4a62.jpg" alt=""/></a>
+                        <span>更新至79集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">我差点就信了2</a>
+
+                        <p>爆笑王子历险记</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/fc21c8dfd49304f6ca0b027959de30b1.jpg" alt=""/></a>
+                        <span>更新至09集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">口水三国 第二季</a>
+
+                        <p>欢乐三国趣事多</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/7318fd0e95f118f46fee64f917132bbf.jpg" alt=""/></a>
+                        <span>更新至04集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">动植物大战</a>
+
+                        <p>环保小战雾霾魔王</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/b730e788ab5ac5c8e92ea6c74746af90.jpg" alt=""/></a>
+                        <span>更新至33集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">天行九歌</a>
+
+                        <p>超高颜值的权谋史诗</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/5a865377cab8f7139f1c9795784cff48.jpg" alt=""/></a>
+                        <span>更新至52集</span>
+                    </div>
+                    <div class="text">
+                        <a href="">灵石茂险王</a>
+
+                        <p>拯救灵石城的大冒险</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--动漫区域结束-->
+
+<!--综艺区域-->
+<div id="zongyi" class="box small-tab">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">综艺</a></h3>
+            <a href="">真人秀场</a>
+            <span>|</span>
+            <a href="">幽默搞笑</a>
+            <span>|</span>
+            <a href="">脱口秀</a>
+            <span>|</span>
+            <a href="">游戏互动</a>
+            <span>|</span>
+            <a href="">访谈对话</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="left">
+            <div class="pic-big">
+                <img src="./images/958ed5a6850a612be4289b92be04e50e.jpg" alt=""/>
+                <a href="" class="no-background"></a>
+                <span class="pre"></span>
+                <span class="next"></span>
+            </div>
+            <div class="text">
+                <a href="">谁是你的菜</a>
+                <a class="hidden" href="">奔跑吧</a>
+
+                <p>陶昕然张晓龙分享角色外生活趣事</p>
+
+                <p class="hidden">猜猜看是谁在放声真唱？</p>
+
+                <span>2017-06-15期</span>
+                <span class="hidden">2017-06-15期</span>
+                <ul class="circle">
+                    <li class="chose " backImg="./images/958ed5a6850a612be4289b92be04e50e.jpg"></li>
+                    <li backImg="./images/a488b5e4044815ac08150f88e117b8b1.jpg"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="content-box">
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/f5cec597cb06288220f653f4af7d472f.jpg" alt=""/></a>
+                        <span>2017-06-17期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">高能少年团</a>
+
+                        <p>黄晓明隔空祝福少年们</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/1262352ccfa10d10e1202e11a9b4cf6a.jpg" alt=""/></a>
+                        <span>2017-06-16期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">中国新歌声小剧场</a>
+
+                        <p>陈奕迅魔性花絮高能慎入</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/86b879d9f7330714e597b275f9239e0a.jpg" alt=""/></a>
+                        <span>2017-06-07期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">歌声的翅膀</a>
+
+                        <p>阎维文回忆十年跳舞生涯</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/164927b0f7dcfc8167898b1c14405f05.jpg" alt=""/></a>
+                        <span>2017-06-16期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">好莱坞工匠</a>
+
+                        <p>《变形金刚》总制片专访</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/1b57c9d6ee9e787fd1a566d399d18b14.jpg" alt=""/></a>
+                        <span>2017-06-13期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">准秀帮</a>
+
+                        <p>不要轻易尝试这种恋爱方式</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/a2f23462b1ef6679cee9f0dba5d1136f.jpg" alt=""/></a>
+                        <span>2017-06-07期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">非常完美</a>
+
+                        <p>美厨娘情系吴泉锡</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/e7b13e9dd910a56eb3eb1e71b1cc08bc.jpg" alt=""/></a>
+                        <span>2017-06-09期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">武林笼中对</a>
+
+                        <p>邱比且裸绞降服对手</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/508321dc1febd00dc1bc6f805aa214b9.jpg" alt=""/></a>
+                        <span>2017-06-12期</span>
+                    </div>
+                    <div class="text">
+                        <a href="">痞子电影</a>
+
+                        <p>我的前任都经历了什么</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--综艺区域结束-->
+
+<!--明星空间区域-->
+<div id="starZone" class="box small-tab">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">明星空间</a></h3>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+        <div class="title-right">
+            <h3><a href="">明星头条</a></h3>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="left">
+            <div class="pic-big">
+                <img src="./images/a088885dd033136792457a0794292686.jpg" alt=""/>
+                <a href="" class="no-background"></a>
+
+                <div class="bg-text">
+                    <p>《明日之子》华晨宇薛之谦：我是直男 不关注</p>
+
+                    <p class="hidden">《择天记》4月17日鹿晗古力娜扎率少年团勇往</p>
+
+                    <p class="hidden">《西游记之女儿国》戏份杀青冯绍峰赵丽颖豪</p>
+
+                    <ul class="circle">
+                        <li class="chose " backImg="./images/a088885dd033136792457a0794292686.jpg"></li>
+                        <li backImg="./images/f0c7f95ebe7fb6489dec65dbfab964c4.jpg"></li>
+                        <li backImg="./images/cb5fd6a416495363da8040ac1e49c10c.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--<span class="pre btn"></span>-->
+            <!--<span class="next btn"></span>-->
+            <div class="text-ul">
+                <ul>
+                    <li>·<a href="">《思美人》掀乱世大幕马可张馨予乔振宇戎装亮相</a></li>
+                    <li>·<a href="">林心如po自拍遭霍建华抢镜，另类秀恩爱</a></li>
+                    <li>·<a href="">《我是歌手2017》半决赛歌单张碧晨林忆莲张杰帮唱嘉</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="content-box">
+                <li class="hot">
+                    <div class="pic-small">
+                        <a href=""><img src="./images/3224bbdcaf0c47e193d8b6c6fce9d6ff.jpg" alt=""/></a>
+                        <span></span>
+                    </div>
+                    <div class="headline-text">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                <a href="">迪丽热巴亮相《奔跑吧》发布会变身怪力少女嗨翻</a>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <a href="">开挂了！李宇春晒健身照保持竟有这样的妙招</a>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <a href="">易烊千玺《北鼻》说东北话暖心照顾生病小葱花</a>
+                            </li>
+                            <li>
+                                <span class="clear-color">4</span>
+                                <a href="">王俊凯的师妹长相甜美粉丝却说：还是王凯莉好看</a>
+                            </li>
+                            <li class="last">
+                                <span class="clear-color">5</span>
+                                <a href="">《嫌疑人》首映现场王凯放言“票房过五亿发自拍”</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/83217f5ba851807ffff0113ff6438878.jpg" alt=""/></a>
+
+                        <div><img src="./images/ad2d7a3da1a0ef7ab79c6e2c79f461c1.jpg" alt=""/></div>
+                        <p>周杰伦</p>
+                    </div>
+                    <div class="text">
+                        <a href="">看周杰伦演唱会尴尬了</a>
+
+                        <p>买了黄牛票却是听一旁观众哭</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/4242bf192423587faef8be595f559a2a.jpg" alt=""/></a>
+
+                        <div><img src="./images/2a0882b08b38d26be09eaf0130a946eb.jpg" alt=""/></div>
+                        <p>迪丽热巴</p>
+                    </div>
+                    <div class="text">
+                        <a href="">《傲慢与偏见》“快本”欢乐</a>
+
+                        <p>迪丽热巴吃货力MAX</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/d14c51bf9739da72011ae5f84d997881.jpg" alt=""/></a>
+
+                        <div><img src="./images/c6bc75062497091f7fa28ca980a8cfc3.jpg" alt=""/></div>
+                        <p>黄子韬</p>
+                    </div>
+                    <div class="text">
+                        <a href="">《Promise》全球首</a>
+
+                        <p>预告海报变身腼腆羞涩小男生</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/ce7a74809d30cb5a3fa8d1058ae44921.jpg" alt=""/></a>
+
+                        <div><img src="./images/1785efed7e68e17a3951f16284980dc6.jpg" alt=""/></div>
+                        <p>邓超</p>
+                    </div>
+                    <div class="text">
+                        <a href="">燃！邓超拍时尚大片</a>
+
+                        <p>花式玩火帅炸了</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/11458be755e715b7b265a4fb05b1ef31.jpg" alt=""/></a>
+
+                        <div><img src="./images/587beacc481e1afb439b3477365e9d4e.jpg" alt=""/></div>
+                        <p>刘涛</p>
+                    </div>
+                    <div class="text">
+                        <a href="">刘涛曝《欢乐颂2》番外</a>
+
+                        <p>安迪将被求婚</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-small">
+                        <a href=""><img src="./images/bfb3e063b22d94b46a2bd2c4d5dab044.jpg" alt=""/></a>
+
+                        <div><img src="./images/39720e7b0c329e1db51e644091cc1a25.jpg" alt=""/></div>
+                        <p>宋茜</p>
+                    </div>
+                    <div class="text">
+                        <a href="">宋茜穿“男朋友”卫衣上综艺</a>
+
+                        <p>撞衫刘雯和蔡依林</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--明星空间区域结束-->
+
+<!--搞笑区域-->
+<div id="joke" class="box joke-box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">搞笑</a></h3>
+            <a href="">囧事</a>
+            <span>|</span>
+            <a href="">整蛊</a>
+            <span>|</span>
+            <a href="">萌宠</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <ul class="content-box">
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/4686d5d17943aac5cfaddaf99a0f3eba.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">鸽子与路过的普金打招呼</a>
+
+                    <p>这是真的成精了吧！</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/19de535bf6afbf49d59ca84360e3b493.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">成都小伙的肚皮会“跳舞”</a>
+
+                    <p>23秒处开挂</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/2d6224ad23cb3e717d8fd77e2b4eb016.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">傻缺老外杯具了！</a>
+
+                    <p>没有金刚钻别揽瓷器活</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/8b78c7a3d2d1b08eb89c960f63203285.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">妈妈嫌弃自己的女友怎么办</a>
+
+                    <p>一招搞定！这套路太6了！</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/42fe5d8f33a79d753eb4bebbdcf08d3f.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">超瞎翻唱3之舞曲大地国</a>
+
+                    <p>嗨爆全场！</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/becbf27168c9543f77b385cab24bd016.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">土豪直播人兽大战不堪入目</a>
+
+                    <p>格斗界的小短腿惨遭KO</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--搞笑区域结束-->
+
+<!--生活区域-->
+<div id="life" class="box joke-box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">生活</a></h3>
+            <a href="">科技</a>
+            <span>|</span>
+            <a href="">旅游</a>
+            <span>|</span>
+            <a href="">汽车</a>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <ul class="content-box">
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/32e7c167192c4ecd75147667dc538ef9.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">零难度爽滑冰粉</a>
+
+                    <p>夏天最赞的消暑甜品</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/5e78e8b54efccd12830152b6a1741f10.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">一招拯救滑落内衣带</a>
+
+                    <p>小尴尬其实一招就能解决</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/2b136afde2ba5506b5f1c4f5c3bc4d15.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">乐享奶昔冰淇淋！</a>
+
+                    <p>水果+酸奶让你口水直流</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/aad9cc18e98ee75c3456b01a13031fb6.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">日本超音波泡沫制造机</a>
+
+                    <p>竟然还不如中国筷子？</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/231175d9cd7bd03f7cbd0fcf7ae815a4.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">办公室必备快捷键</a>
+
+                    <p>让职场菜鸟变高手的操作</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/dea70eae467a17b753547d223a062e3b.jpg" alt=""/></a>
+                </div>
+                <div class="text">
+                    <a href="">磁力便携啤酒架</a>
+
+                    <p>拎箱子、找起子都省了</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--生活区域结束-->
+
+<!--看看出品区域-->
+<div id="kankan" class="box joke-box">
+    <div class="title">
+        <div class="title-left">
+            <h3><a href="">看看出品</a></h3>
+            <span>&nbsp;</span>
+            <a href="">更多></a>
+        </div>
+    </div>
+    <div class="content-area">
+        <ul class="content-box">
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/89fd327b8e5cbcb7dfbcd1d905dddced.jpg" alt=""/></a>
+                    <span></span>
+
+                    <p>30集全</p>
+                </div>
+                <div class="text">
+                    <a href="">终极教师2</a>
+
+                    <p>霸道总裁狂虐美艳女校长</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/25367f83e2ffbdcf4efd87cf73c852f6.jpg" alt=""/></a>
+                    <span></span>
+
+                    <p>52集全</p>
+                </div>
+                <div class="text">
+                    <a href="">女人的秘密第二季</a>
+
+                    <p>多金男大玩制服诱惑</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/40042f7150461662c00f132e616170d8.jpg" alt=""/></a>
+                    <span></span>
+
+                    <p>11集全</p>
+                </div>
+                <div class="text">
+                    <a href="">美女公寓</a>
+
+                    <p>辰亦儒袭胸高冷熟女</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/12c875967c6d53327aeafe52779b061a.jpg" alt=""/></a>
+                    <span></span>
+
+                    <p>46集全</p>
+                </div>
+                <div class="text">
+                    <a href="">超霸花神</a>
+
+                    <p>帅总裁住院享尽艳福</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/a9c6a18896efa5056a70556faff58ebc.jpg" alt=""/></a>
+                    <span></span>
+
+                    <p>52集全</p>
+                </div>
+                <div class="text">
+                    <a href="">四手妙弹</a>
+
+                    <p>女大学生穿越古代做判官</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic-small">
+                    <a href=""><img src="./images/e64f3eac3148766100ce3fcf17f52c64.jpg" alt=""/></a>
+                    <span></span>
+
+                    <p>28集全</p>
+                </div>
+                <div class="text">
+                    <a href="">神探联盟第二季</a>
+
+                    <p>美艳法医调教小鲜肉</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--看看出品区域结束-->
+
+
+<!--页尾区域-->
+<div id="footer-background">
+    <div id="footer">
+        <div class="footer-link">
+            <ul class="first">
+                <li class="classify">天天看看</li>
+                <li><a href="">加入我们</a></li>
+                <li><a href="">加入看看</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+            <ul>
+                <li class="classify">服务</li>
+                <li><a href="">客服中心</a></li>
+                <li><a href="">广告服务</a></li>
+                <li><a href="">意见反馈</a></li>
+            </ul>
+            <ul>
+                <li class="classify">帮助</li>
+                <li><a href="">免责声明</a></li>
+                <li><a href="">用户协议</a></li>
+                <li><a href="">举报专区</a></li>
+            </ul>
+            <ul>
+                <li class="classify">软件下载</li>
+                <li><a href="">响巢看看</a></li>
+                <li><a href="">明星空间</a></li>
+                <li><a href="">看看影音</a></li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <div class="footer-list-left">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/icp_2.png" alt=""/>
+                            互联网违法和不良信息举报中心
+                        </a>
+                        <a href="">信息网络传播视听许可证1908323号</a>
+                        <a href="">广播电视节目制作经营许可证（粤）字第01738号</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/icp_4.png" alt=""/>
+                            互联网文化经营单位
+                        </a>
+                        <a href="">增值电信业务经营许可证粤B2-20050219号</a>
+                        <a href="">互联网出版许可证新出网证（粤）字053号</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/icp_3.png" alt=""/>
+                            深圳市市场监督管理局（工商网监）
+                        </a>
+                        <a href="">备案号：粤ICP备15049026号</a>
+                        <a href="">网络文化经营许可证粤网文[2016]5612-1340号</a>
+                    </li>
+                    <li>
+                        <a href="">互联网药品信息服务资格证书（粤）-非经营性-2016-0165</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="footer-list-right">
+                <a class="app-code" href=""><img src="./images/footer_qr.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="footer-cp">Copyright © 2003-2017 Kankan.com 版权所有 &nbsp;不良信息举报电话：0755-88111710</div>
+    </div>
+
+
+</div>
+
+
+<!--页尾区域结束-->
+
+
 </body>
-
 </html>
